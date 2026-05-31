@@ -1,6 +1,6 @@
 # TrapNet — Honeypot Python expérimental
 
-**TrapNet** est un honeypot expérimental écrit en Python. Il simule des services réseau (SSH, HTTP, FTP), collecte les tentatives de connexion et enregistre des logs pour analyse. Le projet sert à apprendre la détection d’intrusions, l’analyse de trafic malveillant et l’automatisation en Python.
+**TrapNet** est un honeypot expérimental écrit en Python. Il simule des services réseau (SSH, HTTP, FTP), collecte les tentatives de connexion et enregistre des logs pour analyse. Ce projet ma permis à apprendre la détection d’intrusions, l’analyse de trafic malveillant et l’automatisation en Python.
 
 ---
 
@@ -23,7 +23,10 @@
 
 ## Installation (développement local)
 1. Cloner le dépôt  
-```bash
-git clone https://github.com/ton-compte/TrapNet.git
-cd TrapNet
 
+
+## Perspectives et améliorations
+Interface web pour visualiser incidents.
+Support de plus de protocoles et interaction plus riche
+Pipeline d’analyse (parsing, enrichissement IP, alerting).
+déploiement.
