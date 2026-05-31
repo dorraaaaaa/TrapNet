@@ -28,7 +28,7 @@
 - Test SSH
 ssh -p 2222 root@localhost
 
-# Test HTTP → ouvre dans le navigateur
+- Test HTTP → ouvre dans le navigateur
 http://localhost:8080/admin
 
 ## Perspectives et améliorations
