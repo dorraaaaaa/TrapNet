@@ -24,6 +24,12 @@
 ## Installation (développement local)
 1. Cloner le dépôt  
 
+##test
+# Test SSH
+- ssh -p 2222 root@localhost
+
+# Test HTTP → ouvre dans le navigateur
+http://localhost:8080/admin
 
 ## Perspectives et améliorations
 - **Interface web pour visualiser incidents.**
