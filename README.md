@@ -26,7 +26,10 @@
 
 
 ## Perspectives et améliorations
--**Interface web pour visualiser incidents.**
--**Support de plus de protocoles et interaction plus riche**
--**Pipeline d’analyse (parsing, enrichissement IP, alerting).**
--**déploiement.**
+- **Interface web pour visualiser incidents.**
+
+- **Support de plus de protocoles et interaction plus riche**
+
+- **Pipeline d’analyse (parsing, enrichissement IP, alerting).**
+
+- **déploiement.**
