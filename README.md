@@ -1,14 +1,29 @@
-# TrapNet
-honeypot ?
-Un leurre. on fait croire à un attaquant qu'il y a un vrai serveur SSH, HTTP, FTP sur une machine. Il essaie de se connecter, de deviner des mots de passe — toi tu enregistres tout sans jamais lui donner accès à quoi que ce soit de réel.
+# TrapNet — Honeypot Python expérimental
 
-#
-Attaquant                        TrapNet
-   │                                │
-   │──── tente SSH port 22 ────────►│  ← faux serveur SSH
-   │◄─── "Password incorrect" ──────│  (simulé, pas réel)
-   │                                │
-   │                          LOG créé :
-   │                          IP: 185.x.x.x
-   │                          Login tenté: root/admin123
-   │                          Timestamp: 2026-05-30 14:32
+**TrapNet** est un honeypot expérimental écrit en Python. Il simule des services réseau (SSH, HTTP, FTP), collecte les tentatives de connexion et enregistre des logs pour analyse. Le projet sert à apprendre la détection d’intrusions, l’analyse de trafic malveillant et l’automatisation en Python.
+
+---
+
+## Fonctionnalités
+- **Simulation de services** : émulation basique de SSH, HTTP et FTP.  
+- **Collecte de logs** : enregistrement des tentatives de connexion (timestamp, IP source, protocole, action).  
+- **Configuration YAML** : paramètres centralisés et faciles à modifier.  
+- **Dashboard terminal** : affichage en temps réel via Rich.  
+- **Extensible** : architecture modulaire pour ajouter d’autres protocoles ou traitements.
+
+---
+
+## Architecture
+- **Langage** : Python  
+- **Librairies principales** : `paramiko`; `rich`; `pyyaml`  
+- **Protocoles simulés** : SSH; HTTP; FTP  
+- **Type** : Honeypot à basse interaction (simulation)
+
+---
+
+## Installation (développement local)
+1. Cloner le dépôt  
+```bash
+git clone https://github.com/ton-compte/TrapNet.git
+cd TrapNet
+
