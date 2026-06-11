@@ -1,0 +1,27 @@
+# ╔══════════════════════════════════════╗
+# ║       TrapNet — Configuration        ║
+# ╚══════════════════════════════════════╝
+# Ce fichier configure les services de TrapNet, le dashboard et les logs.
+
+services:
+
+  ssh:
+    enabled: true       # true = honeypot SSH actif, false = désactivé
+    port: 2222          # 22 nécessite les droits admin, 2222 fonctionne sans
+
+  http:
+    enabled: true     # true = honeypot HTTP actif, false = désactivé
+    port: 8080        # 80 nécessite les droits admin, 8080 fonctionne sans
+ 
+  ftp:
+    enabled: true     # true = honeypot FTP actif, false = désactivé
+    port: 2121        # 21 nécessite les droits admin, 2121 fonctionne sans
+
+
+dashboard:
+  enabled: true         # true = dashboard live, false = logs texte simples
+  refresh_rate: 2       # rafraîchissements par seconde
+
+logs:
+  file: "logs/trapnet.json"   # chemin du fichier de logs
+  max_events: 50              # nombre max d'événements affichés dans le dashboard
